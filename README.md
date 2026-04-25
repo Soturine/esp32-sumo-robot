@@ -9,14 +9,6 @@ Academic ESP32 sumo robot developed with PlatformIO and ESP-IDF, featuring ultra
 
 Este repositório organiza e documenta um projeto acadêmico já desenvolvido anteriormente em contexto universitário. A publicação atual tem foco em portfólio técnico: o firmware foi organizado em uma estrutura PlatformIO + ESP-IDF, preservando a lógica principal desenvolvida no protótipo acadêmico e acompanhado de documentação para leitura, reprodução e manutenção.
 
-## Autoria
-
-| Papel | Informação |
-| --- | --- |
-| Autor e mantenedor | Rafael Ryan Ramos de Souza / [Soturine](https://github.com/Soturine) |
-| Contexto | Projeto desenvolvido em contexto acadêmico |
-| Publicação | Organização técnica para portfólio no GitHub |
-
 ## Status do Projeto
 
 Projeto acadêmico concluído e atualmente documentado para publicação no GitHub.
