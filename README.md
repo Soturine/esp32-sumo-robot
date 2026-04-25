@@ -7,7 +7,7 @@
 
 Academic ESP32 sumo robot developed with PlatformIO and ESP-IDF, featuring ultrasonic opponent detection, edge sensing, PWM motor control via L298N, and autonomous behavior logic.
 
-Este repositório organiza e documenta um projeto acadêmico já desenvolvido anteriormente em contexto universitário. A publicação atual tem foco em portfólio técnico: o firmware original foi importado a partir de um arquivo `.txt`, colocado em uma estrutura PlatformIO adequada e acompanhado de documentação para leitura, reprodução e manutenção.
+Este repositório organiza e documenta um projeto acadêmico já desenvolvido anteriormente em contexto universitário. A publicação atual tem foco em portfólio técnico: o firmware foi organizado em uma estrutura PlatformIO + ESP-IDF, preservando a lógica principal desenvolvida no protótipo acadêmico e acompanhado de documentação para leitura, reprodução e manutenção.
 
 ## Autoria
 
