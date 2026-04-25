@@ -9,11 +9,25 @@ Academic ESP32 sumo robot developed with PlatformIO and ESP-IDF, featuring ultra
 
 Este repositório organiza e documenta um projeto acadêmico já desenvolvido anteriormente em contexto universitário. A publicação atual tem foco em portfólio técnico: o firmware original foi importado a partir de um arquivo `.txt`, colocado em uma estrutura PlatformIO adequada e acompanhado de documentação para leitura, reprodução e manutenção.
 
+## Autoria
+
+| Papel | Informação |
+| --- | --- |
+| Autor e mantenedor | Rafael Ryan Ramos de Souza / [Soturine](https://github.com/Soturine) |
+| Contexto | Projeto desenvolvido em contexto acadêmico |
+| Publicação | Organização técnica para portfólio no GitHub |
+
 ## Status do Projeto
 
 Projeto acadêmico concluído e atualmente documentado para publicação no GitHub.
 
 O protótipo físico e a lógica principal já existiam antes desta organização do repositório. Nesta etapa, foram feitos apenas ajustes seguros de nomenclatura, comentários e logs para alinhar o código ao comportamento real de um robô sumô autônomo.
+
+## Contexto Acadêmico
+
+Este projeto foi desenvolvido como uma aplicação prática de robótica móvel e sistemas embarcados em ambiente acadêmico. A proposta combina montagem física, eletrônica básica, leitura de sensores, acionamento de motores e tomada de decisão autônoma em um protótipo de robô sumô.
+
+A documentação atual não apresenta resultados de competição, colocação, métricas de desempenho ou medições experimentais que não estejam presentes no material original. O foco deste repositório é registrar a arquitetura, a lógica de controle e os aprendizados técnicos do projeto já realizado.
 
 ## Objetivo
 
@@ -182,14 +196,25 @@ Velocidade configurada no projeto: `115200`.
 
 ## Demonstração
 
-As imagens e vídeos do protótipo físico podem ser adicionados em `assets/images/`.
+Esta seção está preparada para receber registros reais do projeto. Ao adicionar mídias, prefira fotos e vídeos do protótipo físico, da arena e da fiação usada na montagem, evitando imagens genéricas que não representem o robô documentado neste repositório.
 
-Sugestões de arquivos para completar o portfólio:
+| Mídia | Status | Onde adicionar |
+| --- | --- | --- |
+| Vídeo no YouTube | pendente | Adicionar aqui o link público do vídeo real do robô |
+| GIF curto | pendente | `assets/images/demo.gif` |
+| Foto frontal do protótipo | pendente | `assets/images/robot-front.jpg` |
+| Foto superior do protótipo | pendente | `assets/images/robot-top.jpg` |
+| Foto da arena de testes | pendente | `assets/images/arena-test.jpg` |
+| Foto da fiação/montagem | pendente | `assets/images/wiring-photo.jpg` |
+| Diagrama de ligação | pendente | `assets/images/wiring-diagram.png` |
 
-- `assets/images/robot-front.jpg`
-- `assets/images/robot-top.jpg`
-- `assets/images/wiring-diagram.png`
-- `assets/images/demo.gif`
+Sugestão para atualização futura:
+
+```markdown
+Vídeo: https://www.youtube.com/watch?v=SEU_VIDEO_AQUI
+
+![Demo do robô sumô](assets/images/demo.gif)
+```
 
 O arquivo [assets/images/README.md](assets/images/README.md) documenta esses placeholders.
 
@@ -201,6 +226,23 @@ O arquivo [assets/images/README.md](assets/images/README.md) documenta esses pla
 - Para usar PWM nos pinos ENA/ENB da L298N, remova os jumpers de enable da placa.
 - Motores podem girar invertidos dependendo da ligação física; ajuste fios ou lógica com testes controlados.
 - Sensores TCRT5000 precisam de calibração conforme arena, distância do chão e iluminação.
+
+## Desafios e Aprendizados Práticos
+
+Além da lógica de controle, o projeto envolve uma parte importante de ajuste físico e elétrico. Em robótica móvel, pequenas diferenças de montagem podem mudar bastante o comportamento do protótipo.
+
+Principais desafios práticos coerentes com esta versão do firmware:
+
+- calibrar os sensores TCRT5000 para distinguir a borda branca da arena;
+- ajustar os thresholds ADC de acordo com iluminação, altura dos sensores e contraste da superfície;
+- manter GND comum entre ESP32, L298N, sensores e alimentação dos motores;
+- lidar com queda de tensão e ruído quando os motores entram em movimento;
+- proteger o GPIO do ESP32 caso o ECHO do HC-SR04 esteja em 5 V;
+- ajustar PWM, torque e velocidade para evitar respostas bruscas ou fracas demais;
+- conferir o sentido físico dos motores, que pode inverter conforme a ligação na ponte H;
+- testar a estabilidade do robô na arena antes de aumentar a potência dos motores.
+
+Esses pontos reforçam que o comportamento final não depende apenas do código: a montagem, a alimentação e a calibração influenciam diretamente a resposta do robô.
 
 ## Possíveis Melhorias Futuras
 
